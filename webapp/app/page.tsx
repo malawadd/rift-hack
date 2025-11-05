@@ -39,12 +39,12 @@ function SignInForm() {
     <div className="flex flex-col gap-8 w-96 mx-auto">
       <p>Log in to see the numbers</p>
       <SignInButton mode="modal">
-        <button className="bg-foreground text-background px-4 py-2 rounded-md">
+        <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
           Sign in
         </button>
       </SignInButton>
       <SignUpButton mode="modal">
-        <button className="bg-foreground text-background px-4 py-2 rounded-md">
+        <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors">
           Sign up
         </button>
       </SignUpButton>
