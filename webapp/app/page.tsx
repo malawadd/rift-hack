@@ -69,7 +69,15 @@ function Content() {
 
   return (
     <div className="flex flex-col gap-8 max-w-lg mx-auto">
-      <p>Welcome {viewer ?? "Anonymous"}!</p>
+      <div className="flex flex-col gap-4">
+        <p>Welcome {viewer ?? "Anonymous"}!</p>
+        <Link 
+          href="/profile" 
+          className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md transition-colors text-center w-fit mx-auto"
+        >
+          View Profile
+        </Link>
+      </div>
       <p>
         Click the button below and open this page in another window - this data
         is persisted in the Convex cloud database!
