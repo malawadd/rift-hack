@@ -8,7 +8,11 @@
  * @module
  */
 
+import type * as champions from "../champions.js";
+import type * as mlActions from "../mlActions.js";
 import type * as myFunctions from "../myFunctions.js";
+import type * as predictions from "../predictions.js";
+import type * as users from "../users.js";
 
 import type {
   ApiFromModules,
@@ -25,7 +29,11 @@ import type {
  * ```
  */
 declare const fullApi: ApiFromModules<{
+  champions: typeof champions;
+  mlActions: typeof mlActions;
   myFunctions: typeof myFunctions;
+  predictions: typeof predictions;
+  users: typeof users;
 }>;
 declare const fullApiWithMounts: typeof fullApi;
 
